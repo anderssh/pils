@@ -3,6 +3,6 @@ dist/
 .astro/
 .DS_Store
 extracted/
-site/
+/site/
 *.tar.gz
 *.tgz
