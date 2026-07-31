@@ -30,6 +30,7 @@ h1, h2, h3, .section-title, .compact-heading { text-align: left; }
 .home-about p { max-width: 440px; margin-bottom: 14px; font-size: 1.05rem; }
 .home-about .plain-link { margin-top: 0; color: #fff; }
 .latest, .archive-preview, .results, .gallery { padding-block: 60px; }
+.latest .section-title .kicker { display: inline-block; margin-bottom: 16px; padding: 7px 11px 6px; border-radius: 5px; background: var(--gold); color: var(--ink); font-size: 1rem; font-weight: 900; letter-spacing: .08em; }
 .section-title h2 { margin-bottom: 20px; font-size: clamp(2.5rem, 3.8vw, 4.2rem); }
 .test-card { border-radius: 10px; border-color: rgba(25,24,22,.16); }
 .test-card:hover h3 { color: var(--berry); }
@@ -112,6 +113,7 @@ tr.podium td strong:first-child { font-weight: 800; }
   .home-about { width: calc(100% - 32px); margin-top: 18px; padding: 28px 22px; }
   .home-about h2 { font-size: 2.25rem; overflow-wrap: anywhere; }
   .latest, .archive-preview, .results, .gallery { padding-block: 44px; }
+  .latest .section-title .kicker { font-size: .9rem; }
   .test-card img { height: 260px; }
   .test-card.featured img { height: 280px; }
   .test-hero { width: 100%; min-width: 0; }

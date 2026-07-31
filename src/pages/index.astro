@@ -27,7 +27,7 @@ const total = tests.reduce((sum, test) => sum + test.data.results.length, 0);
     <TestCard entry={latest} featured />
   </section>
   <section class="archive-preview section-shell">
-    <div class="section-title"><p class="kicker">Flere resultater</p><h2>Tidligere tester</h2></div>
+    <div class="section-title"><h2>Tidligere tester</h2></div>
     <div class="card-grid">{tests.slice(1, 4).map((entry) => <TestCard entry={entry} />)}</div>
     <a class="plain-link" href={`${import.meta.env.BASE_URL}tester/`}>Se alle testene →</a>
   </section>
