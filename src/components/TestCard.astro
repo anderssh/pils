@@ -9,7 +9,10 @@ const href = `${import.meta.env.BASE_URL}tester/${entry.id}/`;
   <div class="test-card-body">
     <div class="test-card-meta"><span>{data.year}</span>{data.place && <span>{data.place}</span>}</div>
     <h3>{data.title}</h3>
-    <p><strong>Vinner:</strong> {winner.name} · {winner.score.toLocaleString("nb-NO")} lepper</p>
+    {featured ? <div class="featured-facts">
+      <div class="featured-winner"><span>🏆 Vinner</span><strong>{winner.name}</strong></div>
+      <div class="featured-stats"><span><small>Resultat</small><strong>{winner.score.toLocaleString("nb-NO")} lepper</strong></span><span><small>Testet</small><strong>{data.results.length} øl</strong></span></div>
+    </div> : <p><strong>Vinner:</strong> {winner.name} · {winner.score.toLocaleString("nb-NO")} lepper</p>}
     <span class="text-link">Se hele testen <span aria-hidden="true">→</span></span>
   </div>
 </a>

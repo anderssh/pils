@@ -35,14 +35,28 @@ h1, h2, h3, .section-title, .compact-heading { text-align: left; }
 .test-card { border-radius: 10px; border-color: rgba(25,24,22,.16); }
 .test-card:hover h3 { color: var(--berry); }
 .test-card .text-link { color: var(--berry); font-weight: 800; }
-.test-card img { width: 100%; height: 300px; aspect-ratio: auto; object-fit: contain; background: #eeebe4; border-bottom: 1px solid var(--line); }
+.test-card img { width: auto; height: auto; max-width: 100%; max-height: 300px; margin-inline: auto; aspect-ratio: auto; object-fit: contain; background: transparent; }
 .test-card-meta { margin-bottom: 16px; font-size: .88rem; letter-spacing: .07em; }
 .test-card h3 { margin-bottom: 10px; font-size: clamp(1.7rem, 2.2vw, 2.45rem); }
-.test-card.featured img { height: 420px; aspect-ratio: auto; object-fit: contain; }
+.test-card.featured img { width: auto; height: auto; max-width: 100%; max-height: 420px; align-self: center; object-fit: contain; }
+.test-card.featured .test-card-body { padding: clamp(28px, 3.5vw, 50px); }
+.test-card.featured .test-card-meta { justify-content: flex-start; gap: 9px; margin-bottom: 20px; font-size: 1rem; }
+.test-card.featured .test-card-meta span { padding: 7px 10px 6px; border-radius: 5px; background: #f1ede5; color: var(--ink); }
+.test-card.featured .test-card-meta span:last-child { background: #f4d9e3; color: #6d1234; }
+.test-card.featured h3 { margin-bottom: 22px; font-size: clamp(2.15rem, 3vw, 3.2rem); }
+.featured-facts { margin-bottom: 24px; }
+.featured-winner { padding: 14px 16px; border-radius: 8px 8px 0 0; background: var(--gold); }
+.featured-winner span, .featured-stats small { display: block; margin-bottom: 3px; font-size: .78rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+.featured-winner strong { display: block; font-size: 1.08rem; line-height: 1.3; }
+.featured-stats { display: grid; grid-template-columns: 1.35fr .65fr; gap: 1px; overflow: hidden; border-radius: 0 0 8px 8px; background: var(--line); }
+.featured-stats > span { padding: 12px 16px; background: #fff7f1; }
+.featured-stats > span:last-child { background: #e5f0eb; }
+.featured-stats strong { display: block; font-size: 1rem; }
+.test-card.featured .text-link { font-size: 1rem; }
 .page-header h1, .about-page h1 { font-size: clamp(3.5rem, 6vw, 6.5rem); }
 .test-hero { display: block; min-height: 0; padding: 42px max(24px,calc((100vw - var(--max))/2)) 54px; background: #f7e9df; }
-.test-hero-main { display: grid; grid-template-columns: minmax(0,1fr) minmax(360px,.92fr); gap: clamp(42px,6vw,90px); align-items: end; }
-.test-hero-main > img { width: 100%; height: 390px; min-height: 0; object-fit: contain; background: #e6e1d8; border-radius: 10px; }
+.test-hero > .test-hero-main { display: grid; grid-template-columns: minmax(0,1fr) minmax(360px,.92fr); gap: clamp(42px,6vw,90px); align-items: end; padding: 0; }
+.test-hero-main > img { width: auto; height: auto; max-width: 100%; max-height: 390px; min-height: 0; justify-self: center; object-fit: contain; border-radius: 10px; }
 .test-hero h1 { max-width: 680px; font-size: clamp(2.8rem, 4.2vw, 4.5rem); }
 .test-hero .back-link { display: inline-block; margin-bottom: 42px; font-size: .98rem; }
 .test-intro { grid-template-columns: minmax(0, 720px) 280px; justify-content: space-between; gap: 60px; padding-block: 56px; }
@@ -90,19 +104,19 @@ tr.podium td strong:first-child { font-weight: 800; }
 .compact-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 22px; text-align: left; }
 .compact-heading h2 { margin: 0; font-size: clamp(2.2rem, 3vw, 3.2rem); }
 .compact-heading > p { max-width: 440px; margin: 0; color: var(--muted); font-size: .88rem; text-align: left; }
-.gallery-grid { grid-template-columns: repeat(4, 1fr); gap: 10px; }
-.gallery-grid img { height: 260px; object-fit: contain; background: linear-gradient(145deg,#ede9e1,#f9f7f2); border-radius: 8px; }
+.gallery-grid { grid-template-columns: repeat(4, 1fr); align-items: end; gap: 16px; }
+.gallery-grid img { width: auto; height: auto; max-width: 100%; max-height: 260px; justify-self: center; object-fit: contain; border-radius: 8px; }
 
 @media (max-width: 900px) {
   .home-hero { display: block; min-height: 0; }
   .home-hero figure { min-height: 0; aspect-ratio: 1024 / 490; }
   .home-hero figure img { object-fit: contain; }
   .home-about > div { grid-template-columns: 1fr; gap: 22px; }
-  .test-card.featured img { height: 340px; }
-  .test-hero-main { grid-template-columns: 1fr; gap: 28px; }
-  .test-hero-main > img { height: 360px; }
+  .test-card.featured img { max-height: 340px; }
+  .test-hero > .test-hero-main { grid-template-columns: 1fr; gap: 28px; padding: 0; }
+  .test-hero-main > img { max-height: 360px; }
   .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-  .gallery-grid img { height: 240px; }
+  .gallery-grid img { max-height: 240px; }
 }
 
 @media (max-width: 620px) {
@@ -121,14 +135,14 @@ tr.podium td strong:first-child { font-weight: 800; }
   .home-about h2 { font-size: 2.25rem; overflow-wrap: anywhere; }
   .latest, .archive-preview, .results, .gallery { padding-block: 44px; }
   .latest .section-title .kicker { font-size: .9rem; }
-  .test-card img { height: 260px; }
-  .test-card.featured img { height: 280px; }
+  .test-card img { max-height: 260px; }
+  .test-card.featured img { max-height: 280px; }
   .test-hero { width: 100%; min-width: 0; }
   .test-hero { padding: 32px 16px 38px; }
   .test-hero .back-link { margin-bottom: 32px; }
-  .test-hero-main, .test-hero-copy { min-width: 0; }
+  .test-hero > .test-hero-main, .test-hero-copy { min-width: 0; padding: 0; }
   .test-hero h1 { max-width: 100%; font-size: 2.75rem; overflow-wrap: anywhere; }
-  .test-hero-main > img { height: 300px; }
+  .test-hero-main > img { max-height: 300px; }
   .test-hero dl { grid-template-columns: 1fr; }
   .test-intro { padding-block: 42px; }
   .test-intro > div { min-width: 0; }
@@ -136,7 +150,7 @@ tr.podium td strong:first-child { font-weight: 800; }
   .compact-heading { display: block; }
   .compact-heading > p { margin-top: 8px; text-align: left; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-grid img { height: 210px; }
+  .gallery-grid img { max-height: 210px; }
   .about-page { width: calc(100% - 32px); padding-block: 64px; }
   .about-page h1 { max-width: 100%; font-size: clamp(2.25rem, 8.5vw, 2.75rem); overflow-wrap: anywhere; hyphens: auto; }
   .about-page .prose { width: 100%; max-width: none; margin: 0; font-size: 1.2rem; line-height: 1.55; }
