@@ -1,0 +1,89 @@
+title: Juleøltesten 2019
+year: 2019
+place: Veienmoen
+participants:
+  - Vetle Fredriksen
+  - Vetle Bjørkli
+  - Kristoffer Dyraas
+  - Thor-Håkon Venåsen
+  - Anders S. Helmen
+hero: /images/2019/10-1.jpg
+gallery:
+  - /images/2019/8-1.jpg
+  - /images/2019/10-1.jpg
+  - /images/2019/13-1.jpg
+  - /images/2019/16-1.jpg
+intro:
+  - Juleøltesten 2019 ble avholdt på Veienmoen.
+results:
+  - name: Nordland Juleøl
+    brewery: Nordlands Bryggeri
+    alcohol: 4,5
+    color: Fiin
+    volume: 0,5
+    score: 79
+    image: /images/2019/10-1.jpg
+  - name: Aass Premium Juleøl
+    alcohol: 6,5
+    color: Litt rødlig
+    volume: 0,33
+    score: 72
+    image: /images/2019/8-1.jpg
+  - name: Delirium Christmas
+    alcohol: 10,0
+    color: Grumsete rødlig
+    volume: 0,75
+    score: 72
+    image: /images/2019/12-1.jpg
+  - name: Hansa Julebrygg
+    alcohol: 4,7
+    score: 58.2
+    image: /images/2019/1-1.jpg
+  - name: Bryggerhusets Pepperkakeøl
+    alcohol: 4,7
+    score: 58.2
+    image: /images/2019/2-1.jpg
+  - name: Ringnes Julebokk
+    alcohol: 9,0
+    score: 48.8
+    image: /images/2019/3-1.jpg
+  - name: Stavanger Juleøl
+    alcohol: 6,5
+    score: 47.8
+    image: /images/2019/6-1.jpg
+  - name: Haandbryggeriet Bestefar
+    alcohol: 9,0
+    score: 47.25
+    image: /images/2019/13-1.jpg
+  - name: CB Juleøl
+    alcohol: 6,5
+    score: 46.2
+    image: /images/2019/4-1.jpg
+  - name: Laade Gaards Juleøl
+    alcohol: 4,7
+    score: 46.2
+    image: /images/2019/5-1.jpg
+  - name: Haandbryggeriet Nissefar
+    alcohol: 7,0
+    score: 38.25
+    image: /images/2019/14-1.jpg
+  - name: EC Dahls Lille Bjørn Juleøl
+    alcohol: 4,6
+    score: 37.2
+    image: /images/2019/7-1.jpg
+  - name: St. Hallvards Reserve-Jul
+    alcohol: 9,0
+    score: 36.8
+    image: /images/2019/11-1.jpg
+  - name: Munkholm alkoholfritt juleøl
+    alcohol: "0"
+    score: 29.5
+    image: /images/2019/9-1.jpg
+  - name: Nøgne Ø Christmas Ale
+    alcohol: 8,5
+    score: 17
+    image: /images/2019/16-1.jpg
+  - name: Ølkymisten Imperial Christmas Stout
+    alcohol: 10,0
+    score: 10.75
+    image: /images/2019/15-1.jpg

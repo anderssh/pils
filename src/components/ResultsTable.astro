@@ -1,0 +1,22 @@
+---
+const { results } = Astro.props;
+const ranked = [...results].sort((a, b) => b.score - a.score);
+const hasImages = ranked.some((beer) => beer.image);
+const medals = ["👑", "🥈", "🥉"];
+---
+<div class="table-wrap" tabindex="0" role="region" aria-label="Testresultater">
+  <table>
+    <thead><tr><th>Plass</th>{hasImages && <th class="beer-photo">Bilde</th>}<th>Øl</th><th>Bryggeri</th><th>Type</th><th class="score">Lepper</th></tr></thead>
+    <tbody>
+      {ranked.map((beer, index) => (
+        <tr class:list={[`place-${index + 1}`, { winner: index === 0, podium: index < 3 }]}>
+          <td class="rank"><span class="rank-number">{index + 1}</span>{medals[index] && <span class="medal" aria-label={index === 0 ? "Vinner" : `${index + 1}. plass`}>{medals[index]}</span>}</td>
+          {hasImages && <td class="beer-photo">{beer.image ? <img src={`${import.meta.env.BASE_URL}${beer.image.slice(1)}`} alt="" loading="lazy" /> : <span aria-hidden="true">–</span>}</td>}
+          <td><strong>{beer.name}</strong>{beer.comment && <small>{beer.comment}</small>}</td>
+          <td>{beer.brewery || "–"}</td><td>{beer.type || "–"}</td>
+          <td class="score"><strong class="score-pill">{beer.score.toLocaleString("nb-NO")}</strong></td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

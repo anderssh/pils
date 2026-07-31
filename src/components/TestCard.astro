@@ -1,0 +1,15 @@
+---
+const { entry, featured = false } = Astro.props;
+const data = entry.data;
+const winner = [...data.results].sort((a, b) => b.score - a.score)[0];
+const href = `${import.meta.env.BASE_URL}tester/${entry.id}/`;
+---
+<a class:list={["test-card", { featured }]} href={href}>
+  {data.hero && <img src={`${import.meta.env.BASE_URL}${data.hero.slice(1)}`} alt="" loading={featured ? "eager" : "lazy"} />}
+  <div class="test-card-body">
+    <div class="test-card-meta"><span>{data.year}</span>{data.place && <span>{data.place}</span>}</div>
+    <h3>{data.title}</h3>
+    <p><strong>Vinner:</strong> {winner.name} · {winner.score.toLocaleString("nb-NO")} lepper</p>
+    <span class="text-link">Se hele testen <span aria-hidden="true">→</span></span>
+  </div>
+</a>

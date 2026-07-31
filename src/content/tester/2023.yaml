@@ -1,0 +1,74 @@
+title: Øltest sommeren 2023
+year: 2023
+place: Harstad
+participants:
+  - Thor-Håkon
+  - Kristoffer
+  - Anders
+hero: /images/2021/1-Hansa.jpg
+gallery:
+  - /images/2021/1-Hansa.jpg
+  - /images/2021/2-Tuborg.jpg
+  - /images/2021/3-Mack.jpg
+  - /images/2021/4-Aass.jpg
+  - /images/2021/5-Voss.jpg
+  - /images/2021/6-Ringnes.jpg
+  - /images/2021/7-Faerder.jpg
+  - /images/2021/8-St-Feuillien.jpg
+  - /images/2021/9-Põhjala-.jpg
+  - /images/2021/10-Disko-brewing.jpg
+  - /images/2021/11-Aass.jpg
+intro:
+  - Dette året er vi i Harstad.
+  - Det er juni, deilig vær tre uker på rad på østlandet. I Harstad, mer variabelt. Men allikevel
+    finner kjernen av kjernen, kremen av del le créme veien til den Hare Stad for årets ølsmaking,
+    og De ølympiske leker. Fredag ettermiddag møtes de tre aktuelle aktørene på Gardermuen for
+    avreise til Evenes flyplass. Kristoffer og Anders kjørte sammen til Gardermoen P4 L3 og miste
+    shuttlebussen, og endte dermed opp med å ta taxi til terminale, rakk en stor pils, rakk flyet.
+    Anette henta oss og vi var på G i Mercurveien for Pizza og Meet´n greet med både kone og unger
+    fredag, helt topp.
+  - Lørdag ble det plenty av skyting på bane, både pistol, 4-16, 4-17 og laser-rifle. Kristoffer
+    vinner konkurransen, videre går turen til Hinstein for en deilig topptur, ca 50 min opp og 25
+    minutter ned, burger så tilbake til leiren for selve ølsmakinga, og både bålkonkurranse og det
+    ene med det andre (musikk-quiz).
+  - Pilsnertung i år, og ikke minst Mack-tungt! Det viser seg tilogmed at Pokal pr juni 2023 også
+    ligger under Mack-imperiet. Passende da, og ikke helt tilfeldig at vi befinner os nordafør den
+    sirkelen som gjerne betegnes som polar.
+results:
+  - name: Pilsner
+    brewery: Carlsberg
+    alcohol: 4,7
+    type: Pilsner
+    color: Lys og gul
+    volume: 0,5
+    score: 79.3
+    comment: God, chuggbar, frisk og lett.
+  - name: Juicy IPA
+    brewery: Frydenlund
+    score: 77.7
+    comment: Veldig godt, chuggbar, fruity og fresh.
+  - name: Arctic
+    brewery: Mack
+    score: 68.3
+    comment: Smakløs på godt og vondt.
+  - name: Juicy bær
+    brewery: Frydenlund
+    score: 66
+  - name: Isbjørn
+    brewery: Mack
+    score: 59.7
+  - name: Gyllen IPA
+    brewery: Frydenlund
+    score: 55.3
+  - name: Isbjørn Lite blodappelsin
+    brewery: Mack
+    score: 53.3
+  - name: Pilsner
+    brewery: Mack
+    score: 50.3
+  - name: Original pure malt lager premium
+    brewery: Heineken
+    score: 47.7
+  - name: Pokal
+    brewery: Mack
+    score: 41

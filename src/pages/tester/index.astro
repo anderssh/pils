@@ -1,0 +1,10 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TestCard from "../../components/TestCard.astro";
+const tests = (await getCollection("tester")).sort((a, b) => b.data.year - a.data.year);
+---
+<BaseLayout title="Alle tester" description="Alle Ølsmakerorkesterets tester fra 2018 til 2025">
+  <header class="page-header section-shell"><p class="kicker">2018–2025</p><h1>Alle tester</h1><p>{tests.length} tester med resultater, bilder og historiene rundt.</p></header>
+  <div class="card-grid archive-grid section-shell">{tests.map((entry) => <TestCard entry={entry} />)}</div>
+</BaseLayout>

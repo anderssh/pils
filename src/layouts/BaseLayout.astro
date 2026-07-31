@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+import "../styles/density.css";
+interface Props { title?: string; description?: string; }
+const { title, description = "Ølsmakerorkesterets offisielle hjemmeside" } = Astro.props;
+const pageTitle = title ? `${title} — Ølsmakerorkesteret` : "Ølsmakerorkesteret";
+---
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f4f0e8" />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.png`} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
+    <header class="site-header">
+      <a class="wordmark" href={import.meta.env.BASE_URL} aria-label="Ølsmakerorkesteret, hjem">
+        <span class="brand-symbol" aria-hidden="true">
+          <span class="wordmark-mark">Ø</span>
+          <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="" />
+        </span>
+        <span>Ølsmakerorkesteret</span>
+      </a>
+      <nav aria-label="Hovedmeny">
+        <a href={`${import.meta.env.BASE_URL}tester/`}>Alle tester</a>
+        <a href={`${import.meta.env.BASE_URL}om/`}>Om</a>
+      </nav>
+    </header>
+    <main id="innhold"><slot /></main>
+    <footer class="site-footer">
+      <p class="footer-brand"><span class="footer-o">Ø</span><img src={`${import.meta.env.BASE_URL}favicon.png`} alt="" /> Ølsmakerorkesteret</p>
+      <p>Tester fra 2018–2025</p>
+      <a href="#innhold">Til toppen ↑</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ResultsTable from "../../components/ResultsTable.astro";
+export async function getStaticPaths() {
+  const entries = await getCollection("tester");
+  return entries.map((entry) => ({ params: { id: entry.id } }));
+}
+const entry = await getEntry("tester", Astro.params.id!);
+if (!entry) return Astro.redirect(`${import.meta.env.BASE_URL}tester/`);
+const d = entry.data;
+const winner = [...d.results].sort((a, b) => b.score - a.score)[0];
+---
+<BaseLayout title={d.title} description={`${d.title}: ${d.results.length} øl testet${d.place ? ` i ${d.place}` : ""}.`}>
+  <article class="test-page">
+    <header class="test-hero">
+      <div><a class="back-link" href={`${import.meta.env.BASE_URL}tester/`}>← Alle tester</a><p class="kicker">{d.place || "Øltest"} · {d.year}</p><h1>{d.title}</h1><dl><div><dt>Vinner</dt><dd>{winner.name}</dd></div><div><dt>Resultat</dt><dd>{winner.score.toLocaleString("nb-NO")} lepper</dd></div><div><dt>Antall øl</dt><dd>{d.results.length}</dd></div></dl></div>
+      {d.hero && <img src={`${import.meta.env.BASE_URL}${d.hero.slice(1)}`} alt="" />}
+    </header>
+    {(d.intro.length > 0 || d.participants.length > 0) && <section class="test-intro section-shell"><div>{d.intro.map((p, index) => <p class:list={{ "intro-lead": index === 0 }}>{p}</p>)}{d.activities.length > 0 && <div class="activities"><p class="kicker">De ølympiske lekene</p><ol>{d.activities.map((item) => <li>{item}</li>)}</ol></div>}</div>{d.participants.length > 0 && <aside><p class="kicker">Testpanelet</p><ul>{d.participants.map((p) => <li>{p}</li>)}</ul></aside>}</section>}
+    {d.gallery.length > 0 && <section class="gallery section-shell"><div class="compact-heading"><div><p class="kicker">Bilder</p><h2>{d.galleryTitle}</h2></div>{d.galleryNote && <p>{d.galleryNote}</p>}</div><div class="gallery-grid">{d.gallery.map((src, i) => <img src={`${import.meta.env.BASE_URL}${src.slice(1)}`} alt={`Fra ${d.title}, bilde ${i + 1}`} loading="lazy" />)}</div></section>}
+    <section class="results section-shell"><div class="compact-heading"><div><p class="kicker">Resultater</p><h2>Rangeringen</h2></div><p>{d.results.length} øl · sortert etter antall lepper</p></div><ResultsTable results={d.results} /></section>
+  </article>
+</BaseLayout>
