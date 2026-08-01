@@ -21,7 +21,7 @@ const winner = [...d.results].sort((a, b) => b.score - a.score)[0];
       </div>
     </header>
     {(d.intro.length > 0 || d.participants.length > 0) && <section class="test-intro section-shell"><div>{d.intro.map((p, index) => <p class:list={{ "intro-lead": index === 0 }}>{p}</p>)}{d.activities.length > 0 && <div class="activities"><p class="kicker">De ølympiske lekene</p><ol>{d.activities.map((item) => <li>{item}</li>)}</ol></div>}</div>{d.participants.length > 0 && <aside><p class="kicker">Testpanelet</p><ul>{d.participants.map((p) => <li>{p}</li>)}</ul></aside>}</section>}
-    {d.gallery.length > 0 && <section class="gallery section-shell"><div class="compact-heading"><div><p class="kicker">Bilder</p><h2>{d.galleryTitle}</h2></div>{d.galleryNote && <p>{d.galleryNote}</p>}</div><div class="gallery-grid">{d.gallery.map((src, i) => <img src={`${import.meta.env.BASE_URL}${src.slice(1)}`} alt={`Fra ${d.title}, bilde ${i + 1}`} loading="lazy" />)}</div></section>}
+    {d.gallery.length > 0 && <section class="gallery section-shell"><div class="compact-heading"><div><p class="kicker">Bilder</p><h2>{d.galleryTitle}</h2>{d.galleryNote && <p class="gallery-note">{d.galleryNote}</p>}</div></div><div class="gallery-grid">{d.gallery.map((src, i) => <img src={`${import.meta.env.BASE_URL}${src.slice(1)}`} alt={`Fra ${d.title}, bilde ${i + 1}`} loading="lazy" />)}</div></section>}
     <section class="results section-shell"><div class="compact-heading"><div><p class="kicker">Resultater</p><h2>Rangeringen</h2></div><p>{d.results.length} øl · sortert etter antall lepper</p></div><ResultsTable results={d.results} /></section>
   </article>
 </BaseLayout>
