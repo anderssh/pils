@@ -16,7 +16,7 @@ gallery:
   - /images/2021/6-Ringnes.jpg
   - /images/2021/7-Faerder.jpg
   - /images/2021/8-St-Feuillien.jpg
-  - /images/2021/9-Põhjala-.jpg
+  - /images/2021/9-Põhjala-.jpg
   - /images/2021/10-Disko-brewing.jpg
 intro:
   - Dette året er vi i Thornes gate 13.
@@ -72,4 +72,4 @@ results:
   - name: Põhjala
     brewery: Põhjala brewing AS
     score: 24.75
-    image: /images/2021/9-Põhjala-.jpg
+    image: /images/2021/9-Põhjala-.jpg

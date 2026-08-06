@@ -17,7 +17,7 @@ const heroImage = cardImages[entry.id];
   <article class="test-page">
     <header class="test-hero">
       <a class="back-link" href={`${import.meta.env.BASE_URL}tester/`}>← Alle tester</a>
-      <div class="test-hero-main">
+      <div class:list={["test-hero-main", { "no-image": !heroImage }]}>
         <div class="test-hero-copy"><p class="kicker">{d.place || "Øltest"} · {d.year}</p><h1>{d.title}</h1><dl><div><dt>Vinner</dt><dd>{winner.name}</dd></div><div><dt>Resultat</dt><dd>{winner.score.toLocaleString("nb-NO")} lepper</dd></div><div><dt>Antall øl</dt><dd>{d.results.length}</dd></div></dl></div>
         {heroImage && <img src={`${import.meta.env.BASE_URL}${heroImage.src}`} alt="" width={heroImage.width} height={heroImage.height} fetchpriority="high" />}
       </div>

@@ -33,6 +33,9 @@ h1, h2, h3, .section-title, .compact-heading { text-align: left; }
 .latest .section-title .kicker { display: inline-block; margin-bottom: 16px; padding: 7px 11px 6px; border-radius: 5px; background: var(--gold); color: var(--ink); font-size: 1rem; font-weight: 900; letter-spacing: .08em; }
 .section-title h2 { margin-bottom: 20px; font-size: clamp(2.5rem, 3.8vw, 4.2rem); }
 .test-card { border-radius: 10px; border-color: rgba(25,24,22,.16); }
+.test-card.no-image { display: flex; min-height: 300px; background: #f4d9e3; }
+.test-card.no-image .test-card-body { display: flex; width: 100%; flex-direction: column; justify-content: flex-end; }
+.test-card.no-image .test-card-meta { color: #6d1234; }
 .test-card:hover h3 { color: var(--berry); }
 .test-card .text-link { color: var(--berry); font-weight: 800; }
 .test-card img { width: auto; height: auto; max-width: 100%; max-height: 300px; margin-inline: auto; aspect-ratio: auto; object-fit: contain; background: transparent; }
@@ -56,6 +59,7 @@ h1, h2, h3, .section-title, .compact-heading { text-align: left; }
 .page-header h1, .about-page h1 { font-size: clamp(3.5rem, 6vw, 6.5rem); }
 .test-hero { display: block; min-height: 0; padding: 42px max(24px,calc((100vw - var(--max))/2)) 54px; background: #f7e9df; }
 .test-hero > .test-hero-main { display: grid; grid-template-columns: minmax(0,1fr) minmax(360px,.92fr); gap: clamp(42px,6vw,90px); align-items: end; padding: 0; }
+.test-hero > .test-hero-main.no-image { grid-template-columns: minmax(0, 760px); }
 .test-hero-main > img { width: auto; height: auto; max-width: 100%; max-height: 390px; min-height: 0; justify-self: center; object-fit: contain; border-radius: 10px; }
 .test-hero h1 { max-width: 680px; font-size: clamp(2.8rem, 4.2vw, 4.5rem); }
 .test-hero .back-link { display: inline-block; margin-bottom: 42px; font-size: .98rem; }
@@ -146,9 +150,10 @@ tr.podium td strong:first-child { font-weight: 800; }
   .test-hero h1 { max-width: 100%; font-size: 2.75rem; overflow-wrap: anywhere; }
   .test-hero-main > img { max-height: 300px; }
   .test-hero dl { grid-template-columns: 1fr; }
-  .test-intro { padding-block: 42px; }
-  .test-intro > div { min-width: 0; }
+  .test-intro { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 42px; }
+  .test-intro > div { min-width: 0; grid-row: 2; }
   .test-intro > div > p { max-width: 100%; }
+  .test-intro aside { width: 100%; grid-row: 1; }
   .compact-heading { display: block; }
   .compact-heading > p { margin-top: 8px; text-align: left; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
