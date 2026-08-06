@@ -11,7 +11,7 @@ const medals = ["👑", "🥈", "🥉"];
       {ranked.map((beer, index) => (
         <tr class:list={[`place-${index + 1}`, { winner: index === 0, podium: index < 3 }]}>
           <td class="rank"><span class="rank-number">{index + 1}</span>{medals[index] && <span class="medal" aria-label={index === 0 ? "Vinner" : `${index + 1}. plass`}>{medals[index]}</span>}</td>
-          {hasImages && <td class="beer-photo">{beer.image ? <img src={`${import.meta.env.BASE_URL}${beer.image.slice(1)}`} alt="" loading="lazy" /> : <span aria-hidden="true">–</span>}</td>}
+          {hasImages && <td class="beer-photo">{beer.image ? <img src={`${import.meta.env.BASE_URL}${beer.image.slice(1)}`} alt="" loading="lazy" width="44" height="64" /> : <span aria-hidden="true">–</span>}</td>}
           <td><strong>{beer.name}</strong>{beer.comment && <small>{beer.comment}</small>}</td>
           <td>{beer.brewery || "–"}</td><td>{beer.type || "–"}</td>
           <td class="score"><strong class="score-pill">{beer.score.toLocaleString("nb-NO")}</strong></td>

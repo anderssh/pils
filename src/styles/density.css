@@ -1,6 +1,6 @@
 /* Balanced scale, compact results and uncropped images. */
 :root { --berry: #8d1945; --coral: #f05235; --green: #277457; --gold: #f3c84b; --peach: #f5b49a; }
-.kicker { color: var(--orange); font-size: .92rem; font-weight: 800; margin-bottom: 14px; letter-spacing: .105em; }
+.kicker { color: #b53b17; font-size: .92rem; font-weight: 800; margin-bottom: 14px; letter-spacing: .105em; }
 .site-header { height: 78px; }
 .site-header nav { align-items: center; gap: 8px; }
 .site-header nav a { padding: 11px 16px; border-radius: 999px; font-size: 1.1rem; line-height: 1.2; font-weight: 700; }

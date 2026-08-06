@@ -12,16 +12,16 @@ const pageTitle = title ? `${title} — Ølsmakerorkesteret` : "Ølsmakerorkeste
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f4f0e8" />
-    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.png`} />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}brand-beer.webp`} type="image/webp" />
     <title>{pageTitle}</title>
   </head>
   <body>
     <a class="skip-link" href="#innhold">Hopp til innhold</a>
     <header class="site-header">
-      <a class="wordmark" href={import.meta.env.BASE_URL} aria-label="Ølsmakerorkesteret, hjem">
+      <a class="wordmark" href={import.meta.env.BASE_URL} aria-label="Ølsmakerorkesteret">
         <span class="brand-symbol" aria-hidden="true">
           <span class="wordmark-mark">Ø</span>
-          <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="" />
+          <img src={`${import.meta.env.BASE_URL}brand-beer.webp`} alt="" width="64" height="64" />
         </span>
         <span>Ølsmakerorkesteret</span>
       </a>
@@ -32,7 +32,7 @@ const pageTitle = title ? `${title} — Ølsmakerorkesteret` : "Ølsmakerorkeste
     </header>
     <main id="innhold"><slot /></main>
     <footer class="site-footer">
-      <p class="footer-brand"><span class="footer-o">Ø</span><img src={`${import.meta.env.BASE_URL}favicon.png`} alt="" /> Ølsmakerorkesteret</p>
+      <p class="footer-brand"><span class="footer-o">Ø</span><img src={`${import.meta.env.BASE_URL}brand-beer.webp`} alt="" width="64" height="64" /> Ølsmakerorkesteret</p>
       <p>Tester fra 2018–2025</p>
       <a href="#innhold">Til toppen ↑</a>
     </footer>
