@@ -13,6 +13,8 @@ const d = entry.data;
 const winner = [...d.results].sort((a, b) => b.score - a.score)[0];
 const heroImage = cardImages[entry.id];
 const photographedBeers = d.results.filter((beer) => beer.image);
+const beerImagePaths = new Set(photographedBeers.map((beer) => beer.image));
+const supplementaryGallery = d.gallery.filter((src) => !beerImagePaths.has(src));
 ---
 <BaseLayout title={d.title} description={`${d.title}: ${d.results.length} øl testet${d.place ? ` i ${d.place}` : ""}.`}>
   <article class="test-page">
@@ -25,7 +27,7 @@ const photographedBeers = d.results.filter((beer) => beer.image);
     </header>
     {(d.intro.length > 0 || d.participants.length > 0) && <section class="test-intro section-shell"><div>{d.intro.map((p, index) => <p class:list={{ "intro-lead": index === 0 }}>{p}</p>)}{d.activities.length > 0 && <div class="activities"><p class="kicker">De ølympiske lekene</p><ol>{d.activities.map((item) => <li>{item}</li>)}</ol></div>}</div>{d.participants.length > 0 && <aside><p class="kicker">Testpanelet</p><ul>{d.participants.map((p) => <li>{p}</li>)}</ul></aside>}</section>}
     {photographedBeers.length > 0 && <section class="beer-gallery section-shell"><div class="compact-heading"><div><p class="kicker">Ølene</p><h2>Fra kveldens test</h2></div><p>{photographedBeers.length} av {d.results.length} øl fotografert</p></div><div class="beer-gallery-grid">{photographedBeers.map((beer) => <figure><img src={`${import.meta.env.BASE_URL}${beer.image!.slice(1)}`} alt={`${beer.name}${beer.brewery ? ` fra ${beer.brewery}` : ""}`} loading="lazy" /><figcaption><strong>{beer.name}</strong>{beer.brewery && <span>{beer.brewery}</span>}</figcaption></figure>)}</div></section>}
-    {d.gallery.length > 0 && <section class="gallery section-shell"><div class="compact-heading"><div><p class="kicker">Bilder</p><h2>{d.galleryTitle}</h2>{d.galleryNote && <p class="gallery-note">{d.galleryNote}</p>}</div></div><div class="gallery-grid">{d.gallery.map((src, i) => <img src={`${import.meta.env.BASE_URL}${src.slice(1)}`} alt={`Fra ${d.title}, bilde ${i + 1}`} loading="lazy" />)}</div></section>}
+    {supplementaryGallery.length > 0 && <section class="gallery section-shell"><div class="compact-heading"><div><p class="kicker">Bilder</p><h2>{d.galleryTitle}</h2>{d.galleryNote && <p class="gallery-note">{d.galleryNote}</p>}</div></div><div class="gallery-grid">{supplementaryGallery.map((src, i) => <img src={`${import.meta.env.BASE_URL}${src.slice(1)}`} alt={`Fra ${d.title}, bilde ${i + 1}`} loading="lazy" />)}</div></section>}
     <section class="results section-shell"><div class="compact-heading"><div><p class="kicker">Resultater</p><h2>Rangeringen</h2></div><p>{d.results.length} øl · sortert etter antall lepper</p></div><ResultsTable results={d.results} /></section>
   </article>
 </BaseLayout>
