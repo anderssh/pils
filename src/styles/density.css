@@ -111,10 +111,10 @@ tr.podium td strong:first-child { font-weight: 800; }
 .gallery .compact-heading { display: block; }
 .gallery-note { max-width: 62ch; margin: 14px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.55; }
 .beer-gallery { padding-top: 20px; }
-.beer-gallery-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
-.beer-gallery figure { display: grid; grid-template-rows: 260px auto; margin: 0; min-width: 0; }
-.beer-gallery figure img { width: 100%; height: 100%; padding: 8px; object-fit: contain; }
-.beer-gallery figcaption { padding: 11px 4px 0; font-size: .84rem; line-height: 1.25; }
+.beer-gallery-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.beer-gallery figure { display: grid; grid-template-rows: 260px auto; margin: 0; min-width: 0; overflow: hidden; border-radius: 12px; background: rgba(255,255,255,.46); box-shadow: inset 0 0 0 1px rgba(25,24,22,.09); }
+.beer-gallery figure img { width: 100%; height: 100%; padding: 14px 14px 8px; object-fit: contain; }
+.beer-gallery figcaption { min-height: 68px; padding: 12px 10px 14px; font-size: .84rem; line-height: 1.25; text-align: center; }
 .beer-gallery figcaption strong, .beer-gallery figcaption span { display: block; }
 .beer-gallery figcaption span { margin-top: 3px; color: var(--muted); font-size: .76rem; }
 .gallery-grid { grid-template-columns: repeat(4, 1fr); align-items: end; gap: 16px; }
