@@ -6,25 +6,25 @@ participants:
   - Vetle
   - TH
   - Anders
-hero: /images/2020/70.jpg
+hero: /images/2020/hot-rod-garage.jpg
 gallery:
-  - /images/2020/10-2.jpg
-  - /images/2020/20-1.jpg
-  - /images/2020/30.jpg
-  - /images/2020/40.jpg
-  - /images/2020/50.jpg
-  - /images/2020/60.jpg
-  - /images/2020/70.jpg
-  - /images/2020/80.jpg
-  - /images/2020/90.jpg
-  - /images/2020/100.jpg
-  - /images/2020/110.jpg
-  - /images/2020/120.jpg
-  - /images/2020/130.jpg
-  - /images/2020/140.jpg
-  - /images/2020/150.jpg
-  - /images/2020/160.jpg
-  - /images/2020/170.jpg
+  - /images/2020/humbrygg-2-notter-til-hasselhoff.jpg
+  - /images/2020/brekeriet-lussefelle.jpg
+  - /images/2020/amundsen-christmas-morning.jpg
+  - /images/2020/nordlands-juleol.jpg
+  - /images/2020/haandbryggeriet-even-smore-xmas.jpg
+  - /images/2020/mack-vellagret-juleol.jpg
+  - /images/2020/de-tvende-winterwald-julebock.jpg
+  - /images/2020/aass-juleol-boks.jpg
+  - /images/2020/nogne-o-brun-jul.jpg
+  - /images/2020/hot-rod-garage.jpg
+  - /images/2020/nogne-o-hvit-jul.jpg
+  - /images/2020/hansa-julebrygg.jpg
+  - /images/2020/klokk-juleklokk.jpg
+  - /images/2020/aass-juleol-flaske.jpg
+  - /images/2020/kinn-julefred.jpg
+  - /images/2020/mack-god-jul-klassisk.jpg
+  - /images/2020/7-fjell-lys-juleol.jpg
 intro:
   - Årets juleøltest ble avholdt i Thornes gate 13.
 results:
@@ -34,59 +34,76 @@ results:
     type: IPA
     color: Åkergul
     score: 87.75
+    image: /images/2020/hot-rod-garage.jpg
   - name: Juleklokk
     brewery: Klokk og co.
     alcohol: 8,0
     score: 72.5
+    image: /images/2020/klokk-juleklokk.jpg
   - name: Brun jul
     brewery: Nøgne Ø
     alcohol: 4,5
     type: Brown Pale Ale
     score: 70
+    image: /images/2020/nogne-o-brun-jul.jpg
   - name: Lussefelle
     brewery: Brekeriet Beer AB
     alcohol: 6,5
     type: Surøl
     score: 65.25
+    image: /images/2020/brekeriet-lussefelle.jpg
   - name: Christmas Morning
     brewery: Amundsen Bryggeri
     alcohol: 4,7
     type: Breakfast coffee stout
     score: 62.75
+    image: /images/2020/amundsen-christmas-morning.jpg
   - name: Nordlands Juleøl
     brewery: Nordlands Bryggeri
     score: 62.25
+    image: /images/2020/nordlands-juleol.jpg
   - name: God jul og godt nyttår
     brewery: Mack
     score: 62.5
+    image: /images/2020/mack-god-jul-klassisk.jpg
   - name: Juleøl
     brewery: Aass
     score: 57
+    image: /images/2020/aass-juleol-flaske.jpg
   - name: Julebrygg
     brewery: Hansa
     score: 55.5
-  - name: Jule Stout
-    brewery: Mack Mikrobryggeri
+    image: /images/2020/hansa-julebrygg.jpg
+  - name: Vellagret juleøl
+    brewery: Mack
     score: 53.25
+    image: /images/2020/mack-vellagret-juleol.jpg
   - name: Even s'more XMAS
     brewery: Haandbryggeriet
     alcohol: 11,1
     score: 53.25
+    image: /images/2020/haandbryggeriet-even-smore-xmas.jpg
   - name: Lys Juleøl
     brewery: 7 Fjell
     score: 53.25
+    image: /images/2020/7-fjell-lys-juleol.jpg
   - name: Hvit Jul
     brewery: Nøgne Ø
     score: 49
+    image: /images/2020/nogne-o-hvit-jul.jpg
   - name: Winterwald Julebock
     brewery: De Tvende
     score: 46.25
+    image: /images/2020/de-tvende-winterwald-julebock.jpg
   - name: Juleøl
     brewery: Aass
     score: 43.5
+    image: /images/2020/aass-juleol-boks.jpg
   - name: 2 nøtter til Hasselhoff
     brewery: Humbrygg
     score: 42.5
+    image: /images/2020/humbrygg-2-notter-til-hasselhoff.jpg
   - name: Julefred
     brewery: Kinn Bryggeri
     score: 41.75
+    image: /images/2020/kinn-julefred.jpg

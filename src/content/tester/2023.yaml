@@ -5,6 +5,7 @@ participants:
   - Thor-Håkon
   - Kristoffer
   - Anders
+hero: /images/2023/carlsberg-pilsner.webp
 gallery: []
 intro:
   - Dette året er vi i Harstad.
@@ -25,6 +26,7 @@ intro:
 results:
   - name: Pilsner
     brewery: Carlsberg
+    image: /images/2023/carlsberg-pilsner.webp
     alcohol: 4,7
     type: Pilsner
     color: Lys og gul
@@ -33,10 +35,12 @@ results:
     comment: God, chuggbar, frisk og lett.
   - name: Juicy IPA
     brewery: Frydenlund
+    image: /images/2023/frydenlund-juicy-ipa.webp
     score: 77.7
     comment: Veldig godt, chuggbar, fruity og fresh.
   - name: Arctic
     brewery: Mack
+    image: /images/2023/mack-arctic.webp
     score: 68.3
     comment: Smakløs på godt og vondt.
   - name: Juicy bær
@@ -44,19 +48,25 @@ results:
     score: 66
   - name: Isbjørn
     brewery: Mack
+    image: /images/2023/mack-isbjorn-pilsner.webp
     score: 59.7
   - name: Gyllen IPA
     brewery: Frydenlund
+    image: /images/2023/frydenlund-gyllen-ipa.webp
     score: 55.3
   - name: Isbjørn Lite blodappelsin
     brewery: Mack
+    image: /images/2023/mack-isbjorn-lite-blodappelsin.webp
     score: 53.3
   - name: Pilsner
     brewery: Mack
+    image: /images/2023/mack-pilsner.webp
     score: 50.3
   - name: Original pure malt lager premium
     brewery: Heineken
+    image: /images/2023/heineken-original-pure-malt-lager.webp
     score: 47.7
   - name: Pokal
     brewery: Mack
+    image: /images/2023/mack-pokal-pilsner.webp
     score: 41

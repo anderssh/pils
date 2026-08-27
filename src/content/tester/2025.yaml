@@ -12,7 +12,7 @@ gallery:
   - /images/2025/20251011_220330-scaled.jpg
   - /images/2025/20251011_220335-scaled.jpg
 galleryTitle: Fra de ølympiske lekene
-galleryNote: Tre bilder fra kveldens ølympiske leker. Det ble ikke tatt egne bilder av ølene denne gangen.
+galleryNote: Tre bilder fra kveldens ølympiske leker.
 intro:
   - Dette året er vi i Hønefos, og det er vinnern av 2023-versjonen av juleøltesten, altså Anders,
     som arrangerer. Den harde kjerne av ølsmakerorkersteret er med.
@@ -42,51 +42,66 @@ activities:
 results:
   - name: Isbjørn Lite med smak av blodappelsin
     brewery: Mack
+    image: /images/2025/beers/mack-isbjorn-lite-blodappelsin.webp
     score: 73.75
     comment: Avbalansert.
   - name: Obolon Premium
     brewery: Premium
+    image: /images/2025/beers/obolon-premium.webp
     score: 73
   - name: Sporty IPA LITE
     brewery: Nøisom
+    image: /images/2025/beers/noisom-sporty-ipa-lite.webp
     score: 73
   - name: Snuble Juice
     brewery: To Øl
+    image: /images/2025/beers/to-ol-snuble-juice.webp
     score: 72.75
     comment: Fræsk, sommeraktig smak.
   - name: Isbjørn Lite med smak av mango
     brewery: Mack
+    image: /images/2025/beers/mack-isbjorn-lite-mango.webp
     score: 68
   - name: Hoppy lager
     brewery: Klokk & Co
+    image: /images/2025/beers/klokk-co-hoppy-lager.webp
     score: 66.75
   - name: Lite Juicy IPA
     brewery: Frydenlund
+    image: /images/2025/beers/frydenlund-lite-juicy-ipa.webp
     score: 65.5
-  - name: Schaus Lite
-    brewery: Schaus (Ringnes)
+  - name: Schous Lite
+    brewery: Schous (Ringnes)
     score: 64.25
   - name: Nordlandspils
     brewery: Nordlands Bryggeri
+    image: /images/2025/beers/nordlands-pils.webp
     score: 63.25
   - name: Hazyday Hero
     brewery: Amundsen Bryggeri
+    image: /images/2025/beers/amundsen-hazyday-hero.webp
     score: 59.75
   - name: Mango IPA
     brewery: Hansa
+    image: /images/2025/beers/hansa-mango-ipa.webp
     score: 59.25
   - name: Blonde Ale Wongraven
     brewery: Amundsen Bryggeri
+    image: /images/2025/beers/amundsen-wongraven-blonde-ale.webp
     score: 54.75
   - name: Triosphere
     brewery: Sørvik Bryggeri
+    image: /images/2025/beers/sorvik-triosphere.webp
     score: 54.75
   - name: Skjeggjøld
     brewery: Bømmeløen Bryggerhus
+    image: /images/2025/beers/bommeloen-skjeggjold.webp
     score: 54
   - name: Bringebær og chili
     brewery: Nøisom
+    image: /images/2025/beers/noisom-bringebaer-chili.webp
     score: 51.75
   - name: Lime Cut
     brewery: Tuborg
+    image: /images/2025/beers/tuborg-lime-cut.webp
     score: 48.5
