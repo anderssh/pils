@@ -7,12 +7,12 @@ participants:
   - Kristoffer Dyraas
   - Thor-Håkon Venåsen
   - Anders S. Helmen
-hero: /images/2019/nordlands-juleol.jpg
+hero: /images/2019/nordlands-juleol.webp
 gallery:
-  - /images/2019/aass-premium-juleol.jpg
-  - /images/2019/nordlands-juleol.jpg
-  - /images/2019/haandbryggeriet-bestefar.jpg
-  - /images/2019/nogne-o-christmas-ale.jpg
+  - /images/2019/aass-premium-juleol.webp
+  - /images/2019/nordlands-juleol.webp
+  - /images/2019/haandbryggeriet-bestefar.webp
+  - /images/2019/nogne-o-christmas-ale.webp
 intro:
   - Juleøltesten 2019 ble avholdt på Veienmoen.
 results:
@@ -22,68 +22,68 @@ results:
     color: Fiin
     volume: 0,5
     score: 79
-    image: /images/2019/nordlands-juleol.jpg
+    image: /images/2019/nordlands-juleol.webp
   - name: Aass Premium Juleøl
     alcohol: 6,5
     color: Litt rødlig
     volume: 0,33
     score: 72
-    image: /images/2019/aass-premium-juleol.jpg
+    image: /images/2019/aass-premium-juleol.webp
   - name: Delirium Christmas
     alcohol: 10,0
     color: Grumsete rødlig
     volume: 0,75
     score: 72
-    image: /images/2019/delirium-christmas.jpg
+    image: /images/2019/delirium-christmas.webp
   - name: Hansa Julebrygg
     alcohol: 4,7
     score: 58.2
-    image: /images/2019/hansa-julebrygg.jpg
+    image: /images/2019/hansa-julebrygg.webp
   - name: Bryggerhusets Pepperkakeøl
     alcohol: 4,7
     score: 58.2
-    image: /images/2019/bryggerhuset-pepperkakeol.jpg
+    image: /images/2019/bryggerhuset-pepperkakeol.webp
   - name: Ringnes Julebokk
     alcohol: 9,0
     score: 48.8
-    image: /images/2019/ringnes-julebokk.jpg
+    image: /images/2019/ringnes-julebokk.webp
   - name: Stavanger Juleøl
     alcohol: 6,5
     score: 47.8
-    image: /images/2019/stavanger-juleol.jpg
+    image: /images/2019/stavanger-juleol.webp
   - name: Haandbryggeriet Bestefar
     alcohol: 9,0
     score: 47.25
-    image: /images/2019/haandbryggeriet-bestefar.jpg
+    image: /images/2019/haandbryggeriet-bestefar.webp
   - name: CB Juleøl
     alcohol: 6,5
     score: 46.2
-    image: /images/2019/cb-juleol.jpg
+    image: /images/2019/cb-juleol.webp
   - name: Laade Gaards Juleøl
     alcohol: 4,7
     score: 46.2
-    image: /images/2019/laade-gaards-juleol.jpg
+    image: /images/2019/laade-gaards-juleol.webp
   - name: Haandbryggeriet Nissefar
     alcohol: 7,0
     score: 38.25
-    image: /images/2019/haandbryggeriet-nissefar.jpg
+    image: /images/2019/haandbryggeriet-nissefar.webp
   - name: EC Dahls Lille Bjørn Juleøl
     alcohol: 4,6
     score: 37.2
-    image: /images/2019/ec-dahls-lille-bjorn-juleol.jpg
+    image: /images/2019/ec-dahls-lille-bjorn-juleol.webp
   - name: St. Hallvards Reserve-Jul
     alcohol: 9,0
     score: 36.8
-    image: /images/2019/st-hallvards-reserve-jul.jpg
+    image: /images/2019/st-hallvards-reserve-jul.webp
   - name: Munkholm alkoholfritt juleøl
     alcohol: "0"
     score: 29.5
-    image: /images/2019/munkholm-alkoholfritt-juleol.jpg
+    image: /images/2019/munkholm-alkoholfritt-juleol.webp
   - name: Nøgne Ø Christmas Ale
     alcohol: 8,5
     score: 17
-    image: /images/2019/nogne-o-christmas-ale.jpg
+    image: /images/2019/nogne-o-christmas-ale.webp
   - name: Ølkymisten Imperial Christmas Stout
     alcohol: 10,0
     score: 10.75
-    image: /images/2019/olkymisten-imperial-christmas-stout.jpg
+    image: /images/2019/olkymisten-imperial-christmas-stout.webp

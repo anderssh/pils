@@ -6,18 +6,18 @@ participants:
   - Vetle Fredriksen
   - Kristoffer
   - Anders
-hero: /images/2021/disko-infernal.jpg
+hero: /images/2021/disko-infernal.webp
 gallery:
-  - /images/2021/hansa-juleol.jpg
-  - /images/2021/tuborg-juleol.jpg
-  - /images/2021/mack-det-klassiske-juleolet.jpg
-  - /images/2021/aass-juleol.jpg
-  - /images/2021/voss-brukbar-jolagava.jpg
-  - /images/2021/ringnes-juleol.jpg
-  - /images/2021/faerder-jul.jpg
-  - /images/2021/st-feuillien-juleol.jpg
-  - /images/2021/pohjala-juleol.jpg
-  - /images/2021/disko-infernal.jpg
+  - /images/2021/hansa-juleol.webp
+  - /images/2021/tuborg-juleol.webp
+  - /images/2021/mack-det-klassiske-juleolet.webp
+  - /images/2021/aass-juleol.webp
+  - /images/2021/voss-brukbar-jolagava.webp
+  - /images/2021/ringnes-juleol.webp
+  - /images/2021/faerder-jul.webp
+  - /images/2021/st-feuillien-juleol.webp
+  - /images/2021/pohjala-juleol.webp
+  - /images/2021/disko-infernal.webp
 intro:
   - Dette året er vi i Thornes gate 13.
   - Det er romjul, vi er samla, og det er burger og fries på G. Snøen faller, Vetle har akkurat fått
@@ -35,41 +35,41 @@ results:
     volume: 0,44
     score: 74
     comment: Lys og god, frisk og fin. Veldig fresh.
-    image: /images/2021/disko-infernal.jpg
+    image: /images/2021/disko-infernal.webp
   - name: Juleøl
     brewery: Hansa
     score: 62.25
     comment: Streit og god. Tar ingen store sjanser.
-    image: /images/2021/hansa-juleol.jpg
+    image: /images/2021/hansa-juleol.webp
   - name: Juleøl
     brewery: Aass
     score: 56
-    image: /images/2021/aass-juleol.jpg
+    image: /images/2021/aass-juleol.webp
   - name: Juleøl
     brewery: Ringnes
     score: 52.5
-    image: /images/2021/ringnes-juleol.jpg
+    image: /images/2021/ringnes-juleol.webp
   - name: Juleøl
     brewery: Tuborg
     score: 47
-    image: /images/2021/tuborg-juleol.jpg
+    image: /images/2021/tuborg-juleol.webp
   - name: Det klassiske juleølet
     brewery: Mack
     score: 44.75
-    image: /images/2021/mack-det-klassiske-juleolet.jpg
+    image: /images/2021/mack-det-klassiske-juleolet.webp
   - name: Jul
     brewery: Færder mikrobryggeri
     score: 43.75
-    image: /images/2021/faerder-jul.jpg
+    image: /images/2021/faerder-jul.webp
   - name: Brukbar Jolagåva
     brewery: Voss Fellesbryggeri
     score: 42.5
-    image: /images/2021/voss-brukbar-jolagava.jpg
+    image: /images/2021/voss-brukbar-jolagava.webp
   - name: St. Feuillien
     brewery: Brasserie St. Feuillien
     score: 25.5
-    image: /images/2021/st-feuillien-juleol.jpg
+    image: /images/2021/st-feuillien-juleol.webp
   - name: Põhjala
     brewery: Põhjala brewing AS
     score: 24.75
-    image: /images/2021/pohjala-juleol.jpg
+    image: /images/2021/pohjala-juleol.webp
